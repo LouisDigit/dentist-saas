@@ -14,12 +14,18 @@ model User {
   emailVerified     DateTime?
   image             String?
   password          String?
+  role              Role @default(USER)
   accounts          Account[]
   
   // Payments 
   stripeCustomerId  String?
   plan              UserPlan @default(FREE)
 
+}
+
+enum Role {
+  USER
+  ADMIN
 }
 
 enum UserPlan {

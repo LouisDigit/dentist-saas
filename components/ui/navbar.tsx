@@ -18,10 +18,10 @@ const Navbar: React.FC<NavbarProps> = async () => {
     <header className="flex items-center justify-between px-2.5 md:px-10 py-4  border-b-[0.5px] border-b-neutral-300">
       <Link
         href="/"
-        className="flex items-center justify-center gap-x-2 text-2xl font-bold text-neutral-950 dark:text-neutral-300"
+        className="flex items-center justify-center gap-x-2 text-2xl font-semibold text-neutral-950 dark:text-neutral-300"
       >
         <Image src="/images/logo.svg" alt="logo" width={60} height={30} />
-        MySaaS
+        Dentist SaaS
       </Link>
       <nav className="flex flex-row items-center gap-x-4">
         {name ? (
